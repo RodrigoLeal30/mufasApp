@@ -1,0 +1,78 @@
+<ion-content class="menu-content">
+  <div class="menu-container">
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+
+    <h1 class="title">Bienvenido</h1>
+    <p class="subtitle">¿Qué deseas hacer?</p>
+
+    <ion-grid>
+      <ion-row>
+        <!-- Buscar Mufa -->
+        <ion-col size="12" size-md="6">
+          <ion-card button (click)="goTo('buscar-mufa')" class="menu-card">
+            <ion-card-header class="card-header">
+              <ion-icon name="search-outline" class="icon"></ion-icon>
+              <ion-card-title>Buscar Mufa</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Encuentra una mufa existente en la red.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <!-- Registrar Mufa -->
+        <ion-col size="12" size-md="6">
+          <ion-card button (click)="goTo('registrar-mufa')" class="menu-card">
+            <ion-card-header class="card-header">
+              <ion-icon name="add-circle-outline" class="icon"></ion-icon>
+              <ion-card-title>Registrar Mufa</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Ingresa una nueva mufa con coordenadas y foto.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <!-- Registrar OC -->
+        <ion-col size="12" size-md="6">
+          <ion-card button (click)="goTo('registrar-oc')" class="menu-card">
+            <ion-card-header class="card-header">
+              <ion-icon name="folder-open-outline" class="icon"></ion-icon>
+              <ion-card-title>Registrar OC</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Crea una nueva OC para organizar tus rutas de fibra.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <!-- Registrar CAP -->
+        <ion-col size="12" size-md="6">
+          <ion-card button (click)="goTo('registrar-cap')" class="menu-card">
+            <ion-card-header class="card-header">
+              <ion-icon name="document-text-outline" class="icon"></ion-icon>
+              <ion-card-title>Registrar CAP</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Registra un nuevo CAP asociado a una OC existente.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <!-- Agregar Ruta -->
+        <ion-col size="12" size-md="6">
+          <ion-card button (click)="goTo('agregar-ruta')" class="menu-card">
+            <ion-card-header class="card-header">
+              <ion-icon name="map-outline" class="icon"></ion-icon>
+              <ion-card-title>Agregar Ruta</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Traza una nueva ruta de fibra agregando mufas en el mapa.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

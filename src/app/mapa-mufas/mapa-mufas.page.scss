@@ -1,0 +1,12 @@
+#map {
+  height: 100%;
+  width: 100%;
+  pointer-events: auto;
+}
+
+/* Botones cuadrados */
+ion-fab-button {
+  --border-radius: 12px; /* menos redondo */
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,21 @@
+<ion-content>
+  <div #mapElement id="map"></div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="activarAgregarMufa()">
+      <ion-icon name="add-circle"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button (click)="activarTrazarRuta()">
+      <ion-icon name="git-branch-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button color="warning" (click)="borrarUltimaTraza()">
+      <ion-icon name="trash-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button color="danger" (click)="finalizarRuta()">
+      <ion-icon name="checkmark-done-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

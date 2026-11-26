@@ -1,0 +1,82 @@
+/* Fondo general */
+ion-content {
+  --background: #f5f6fa;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Card principal de la mufa */
+.mufa-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Imagen grande estilo card */
+.imagen-mufa {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Inputs y selects modernos */
+ion-item {
+  --background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 12px;
+}
+
+ion-label {
+  font-weight: 600;
+  color: #444;
+}
+
+/* Botones grandes y redondeados */
+ion-button {
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 12px 0;
+  margin-top: 8px;
+}
+
+/* Lista de cables en cards */
+.cable-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cable-card ion-item {
+  box-shadow: none; /* quitar sombra interna */
+  --background: transparent;
+}
+
+/* Botones de eliminar cable alineados */
+.cable-card .cable-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Textos y labels más claros */
+ion-card-header,
+ion-card-content {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Ajuste para input de file */

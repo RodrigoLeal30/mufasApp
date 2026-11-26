@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agregar Ruta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Buscador de dirección -->
+  <ion-searchbar [(ngModel)]="searchAddress" (ionInput)="buscarDireccion()"></ion-searchbar>
+
+  <!-- Mapa -->
+  <div #mapElement id="map" class="map-container"></div>
+
+  <!-- Botones flotantes -->
+  <div class="floating-buttons">
+    <ion-button color="primary" (click)="modoAgregarMufa = true">Agregar Mufa</ion-button>
+    <ion-button color="danger" (click)="eliminarUltimoTrazado()">Eliminar Último</ion-button>
+    <ion-button color="secondary" (click)="modoTrazar = true">Agregar Trazado</ion-button>
+  </div>
+
+</ion-content>

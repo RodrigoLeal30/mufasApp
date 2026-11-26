@@ -1,0 +1,125 @@
+/* registrar-mufa.page.scss */
+
+ion-content {
+  --background: #f9fafb; /* Fondo muy claro */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 24px 16px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 24px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+ion-item {
+  --background: #fefefe;
+  margin-bottom: 16px;
+  --border-color: #d1d5db;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  color: black;
+}
+
+ion-label {
+  font-weight: 500;
+  color: #4b5563;
+}
+
+ion-input,
+ion-select {
+  font-size: 1rem;
+  color: #111827;
+}
+
+ion-button {
+  --background: #3b82f6;
+  --background-hover: #2563eb;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+ion-button:disabled {
+  --background: #a5b4fc;
+  box-shadow: none;
+}
+
+.error-message {
+  color: #dc2626; /* rojo fuerte para error */
+  font-size: 0.85rem;
+  margin-top: -12px;
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+/* Estilo para grupo de cables */
+.cable-group {
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  background: #e0f2fe; /* azul muy suave para destacar */
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(14, 165, 233, 0.2);
+  border: 1.5px solid #38bdf8; /* azul celeste */
+}
+
+/* Items dentro del grupo cable */
+.cable-group ion-item {
+  margin-bottom: 12px;
+  --background: #ffffff;
+  box-shadow: none;
+  border-radius: 6px;
+  border: 1px solid #bae6fd; /* borde suave azul */
+}
+
+.cable-group ion-label {
+  font-weight: 600;
+  color: #0369a1; /* azul medio para etiquetas */
+}
+
+.cable-group ion-input,
+.cable-group ion-select {
+  color: #0c4a6e; /* azul oscuro para inputs */
+}
+
+/* Botón eliminar cable */
+ion-button[color="danger"] {
+  --background: #ef4444;
+  --background-hover: #dc2626;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(239, 68, 68, 0.4);
+}
+
+/* Botón agregar cable */
+ion-button[fill="outline"] {
+  --border-color: #3b82f6;
+  --color: #415c88;
+  font-weight: 600;
+  margin-top: 0;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+ion-button[fill="outline"]:hover {
+  --background: #bfdbfe;
+  --color: #1e40af;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.4);
+}

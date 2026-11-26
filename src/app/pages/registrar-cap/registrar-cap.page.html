@@ -1,0 +1,19 @@
+<form [formGroup]="capForm" (ngSubmit)="registrarCap()">
+  <ion-item>
+    <ion-label position="floating">Selecciona OC</ion-label>
+    <ion-select formControlName="ocId" placeholder="Elige una OC">
+      <ion-select-option *ngFor="let oc of ocList$ | async" [value]="oc.id">
+        {{ oc.nombre }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Número de CAP</ion-label>
+    <ion-input type="number" formControlName="numeroCap" min="1" inputmode="numeric"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" type="submit" [disabled]="capForm.invalid" class="btn-registrar">
+    Registrar CAP
+  </ion-button>
+</form>

@@ -1,0 +1,16 @@
+<ion-content class="ion-padding registrar-oc-content">
+  <div class="form-container">
+    <h1>Registrar Nueva OC</h1>
+    <form [formGroup]="ocForm" (ngSubmit)="registrarOC()">
+      <ion-item>
+        <ion-label position="floating">Nombre de la OC</ion-label>
+        <ion-input formControlName="nombre" type="text" autocomplete="off"></ion-input>
+      </ion-item>
+     <div class="error-message" *ngIf="ocForm.controls['nombre'].touched && ocForm.controls['nombre'].invalid">
+  <small>El nombre de la OC es obligatorio</small>
+</div>
+
+      <ion-button expand="block" type="submit" [disabled]="ocForm.invalid">Registrar OC</ion-button>
+    </form>
+  </div>
+</ion-content>

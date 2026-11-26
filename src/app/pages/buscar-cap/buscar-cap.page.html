@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>CAPs de OC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<ion-list>
+  <ion-item *ngFor="let cap of capList$ | async" (click)="goToMapaMufas(cap.id)">
+    <div class="cap-number">{{ cap.numeroCap }}</div>
+  </ion-item>
+</ion-list>
+</ion-content>

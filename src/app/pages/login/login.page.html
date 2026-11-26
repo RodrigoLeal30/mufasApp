@@ -1,0 +1,59 @@
+<ion-content class="ion-padding login-content">
+
+  <div class="login-container">
+
+    <div class="logo-container">
+      <!-- Puedes poner aquí tu logo -->
+      <img src="assets/logo.png" alt="Logo" class="logo" />
+    </div>
+
+    <h1>Bienvenido</h1>
+    <p class="subtitle">Por favor ingresa para continuar</p>
+
+    <form [formGroup]="loginForm" (ngSubmit)="submit()" class="login-form">
+
+      <ion-item>
+        <ion-label position="floating" style="color: aliceblue;">Correo electrónico</ion-label>
+        <ion-input
+          type="email"
+          formControlName="email"
+          autocomplete="email"
+          required
+        ></ion-input>
+      </ion-item>
+      <div class="error-message" *ngIf="email?.touched && email?.invalid">
+        <small *ngIf="email?.errors?.['required']">El correo es requerido</small>
+        <small *ngIf="email?.errors?.['email']">Ingrese un correo válido</small>
+      </div>
+
+      <ion-item>
+        <ion-label position="floating" style="color: aliceblue;">Contraseña</ion-label>
+        <ion-input
+          type="password"
+          formControlName="password"
+          autocomplete="current-password"
+          required
+        ></ion-input>
+      </ion-item>
+      <div class="error-message" *ngIf="password?.touched && password?.invalid">
+        <small *ngIf="password?.errors?.['required']">La contraseña es requerida</small>
+      </div>
+
+      <ion-button
+        expand="block"
+        type="submit"
+        [disabled]="loginForm.invalid"
+        class="login-button"
+      >
+        Ingresar
+      </ion-button>
+
+    </form>
+
+    <div class="register-link">
+      <p>¿No tienes cuenta? <a (click)="goToRegister()">Regístrate aquí</a></p>
+    </div>
+
+  </div>
+
+</ion-content>

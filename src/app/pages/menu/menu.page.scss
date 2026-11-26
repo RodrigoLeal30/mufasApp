@@ -1,0 +1,64 @@
+.menu-content {
+  --background: #055741;
+}
+
+.menu-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.menu-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  background-color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  ion-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+
+    .icon {
+      font-size: 36px;
+      color: #3880ff;
+      margin-bottom: 10px;
+    }
+
+    ion-card-title {
+      font-size: 20px;
+      font-weight: 500;
+      color: #222;
+    }
+  }
+
+  ion-card-content {
+    font-size: 14px;
+    color: #444;
+    padding: 0 16px 16px;
+  }
+}

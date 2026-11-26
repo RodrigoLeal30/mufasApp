@@ -1,0 +1,35 @@
+<ion-content class="ion-padding register-container">
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <h1>Crear cuenta</h1>
+
+    <ion-item>
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input type="email" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-text color="danger" *ngIf="email?.touched && email?.invalid">
+      <small>Correo inválido</small>
+    </ion-text>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-text color="danger" *ngIf="password?.touched && password?.invalid">
+      <small>Mínimo 6 caracteres</small>
+    </ion-text>
+
+    <ion-item>
+      <ion-label position="floating">Confirmar contraseña</ion-label>
+      <ion-input type="password" formControlName="confirmPassword"></ion-input>
+    </ion-item>
+    <ion-text color="danger" *ngIf="confirmPassword?.touched && registerForm.hasError('mismatch')">
+      <small>Las contraseñas no coinciden</small>
+    </ion-text>
+
+    <ion-button expand="block" type="submit" [disabled]="registerForm.invalid">Registrarse</ion-button>
+
+    <ion-button expand="block" fill="clear" (click)="router.navigateByUrl('/login')">
+      ¿Ya tienes cuenta? Inicia sesión
+    </ion-button>
+  </form>
+</ion-content>

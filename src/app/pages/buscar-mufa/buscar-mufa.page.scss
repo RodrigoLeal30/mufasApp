@@ -1,0 +1,20 @@
+
+.fondo-oc {
+  --background: #0d5caa; /* Puedes poner cualquier color aquí */
+}
+
+.fondo-lista {
+  background-color: #0d5caa; /* Celeste claro, por ejemplo */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+ion-item {
+  --background: #f4f4f4;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  --border-style: none;
+  box-shadow: 0 2px 5px rgba(8, 6, 108, 0.05);
+  color: black;
+  text-align: center;
+}

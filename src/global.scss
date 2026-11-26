@@ -35,3 +35,49 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+/* Fondo general claro para todo el contenido Ionic */
+ion-content {
+  --background: #fafafa; /* gris muy claro */
+}
+
+/* Estilo para las listas */
+ion-list {
+  margin: 20px;
+  background: #ffffff; /* blanco puro */
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+/* Estilo para los items */
+ion-item {
+  --background: #fff;
+  color: #333; /* texto gris oscuro */
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin: 6px 16px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Hover para los items */
+ion-item:hover {
+  --background: #e8f0fe; /* azul clarito */
+  color: #1a73e8; /* azul intenso */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.4);
+}
+
+/* Centrar el texto dentro del ion-label */
+ion-item ion-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}
+
+

@@ -1,0 +1,101 @@
+.contenedor {
+  background-color: #064d40; /* verde oscuro */
+  min-height: 100vh;
+  padding: 10px 0;
+}
+
+ion-list {
+  margin: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+ion-item {
+  --background: #ee4d4d;
+  color: #222;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-radius: 12px;
+  margin: 6px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --padding-start: 16px;
+  --padding-end: 16px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+ion-item:hover,
+ion-item.ion-activated {
+  --background: #fff9c4;
+  box-shadow: 0 6px 15px rgba(255, 235, 59, 0.4);
+  cursor: pointer;
+}
+
+ion-item ion-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Swipe buttons */
+
+ion-item-options {
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 6px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Edit button */
+ion-item-option.edit {
+  --background: #fbc02d; /* amarillo */
+  color: #333; /* texto oscuro para contraste */
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-item-option.edit ion-icon {
+  margin-right: 6px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Delete button */
+ion-item-option.delete {
+  --background: #d32f2f; /* rojo fuerte */
+  color: #fff; /* texto blanco para contraste */
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-item-option.delete ion-icon {
+  margin-right: 6px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+
+.edit-option {
+  --background: #fbc02d; /* amarillo */
+  color: black; /* texto e icono en negro para que se vea */
+}
+
+.edit-option ion-icon {
+  color: black;
+  font-size: 24px;
+}
+
+.delete-option {
+  --background: #d32f2f; /* rojo fuerte */
+  color: white; /* texto e icono en blanco */
+}
+
+.delete-option ion-icon {
+  color: white;
+  font-size: 24px;
+}
